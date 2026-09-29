@@ -1,0 +1,36 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VD4</title>
+    <script language="JavaScript">
+        function Respond() {
+            var check = document.getElementsByName("uni");
+            if (check[0].checked == true) {
+                document.getelementbyid("huflit").innerhtml = "Toi la sinh vien ctt truong huflit";
+            }
+            if (check[1].checked == true) {
+                document.getElementById("Huflit").innerHTML = "Toi khong phai la sinh vien ctt truong huflit";
+            }
+        };
+    </script>
+</head>
+<body>
+    <h4>Ban co phai la sinh vien khoa cntt truong huflit khong?</h4>
+    <form>
+        <input type="radio"name="uni" value="yes"/>Phai
+        <br/>
+        <input type="radio"name="uni" value="no"/>Khong Phai
+        <br/>
+        <input type="submit"value="TraLoi"onlick="Respond();"/>Phai
+        <br/>
+        <span id="huflit"><</span>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>VD4</title>
+    <script language="JavaSCript">
+        function TnhTien() {
+            var dg = parsefloat(document.getElementById("dg"));
+            var sl = parsefloat(document.getElementById("sl"));
+            window.document.getElementById("tt").value = dg * sl;
+        }
+    </script>
+</head>
+<body>
+    <h2>Nhap so luong va don hang </h2>
+    <form>
+    Don gia: <input type="number" id="dg"name="dongia"/>
+        So luong :<input type ="number" id="sl"name="so luong" onkeyup="Tinhtien();"/>
+        thanh tien: <input type= "text" id="tt"name="tien"/>
+    </form>
+</body>
+</html>
